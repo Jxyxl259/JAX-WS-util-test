@@ -1,4 +1,4 @@
-package com.demo.soap.webservice.server;
+package com.demo.soap.webservice.server_01;
 
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
