@@ -1,5 +1,5 @@
 
-package com.demo.soap.webservice.server_01;
+package com.demo.soap.webservice.server;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
@@ -24,8 +24,8 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _SayHello_QNAME = new QName("http://server_01.webservice.soap.demo.com/", "sayHello");
-    private final static QName _SayHelloResponse_QNAME = new QName("http://server_01.webservice.soap.demo.com/", "sayHelloResponse");
+    private final static QName _SayHello_QNAME = new QName("http://server.webservice.soap.demo.com/", "sayHello");
+    private final static QName _SayHelloResponse_QNAME = new QName("http://server.webservice.soap.demo.com/", "sayHelloResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.demo.soap.webservice.server_01
@@ -54,7 +54,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link SayHello }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://server_01.webservice.soap.demo.com/", name = "sayHello")
+    @XmlElementDecl(namespace = "http://server.webservice.soap.demo.com/", name = "sayHello")
     public JAXBElement<SayHello> createSayHello(SayHello value) {
         return new JAXBElement<SayHello>(_SayHello_QNAME, SayHello.class, null, value);
     }
@@ -63,7 +63,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link SayHelloResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://server_01.webservice.soap.demo.com/", name = "sayHelloResponse")
+    @XmlElementDecl(namespace = "http://server.webservice.soap.demo.com/", name = "sayHelloResponse")
     public JAXBElement<SayHelloResponse> createSayHelloResponse(SayHelloResponse value) {
         return new JAXBElement<SayHelloResponse>(_SayHelloResponse_QNAME, SayHelloResponse.class, null, value);
     }

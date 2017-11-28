@@ -1,4 +1,4 @@
-package com.demo.soap.webservice.server_01;
+package com.demo.soap.webservice.server;
 
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
@@ -16,13 +16,13 @@ import java.net.URL;
  */
 @WebServiceClient(name = "DemoFunctionInterfaceImplService", 
                   wsdlLocation = "http://192.168.1.16:9999/hello?wsdl",
-                  targetNamespace = "http://server_01.webservice.soap.demo.com/")
+                  targetNamespace = "http://server.webservice.soap.demo.com/")
 public class DemoFunctionInterfaceImplService extends Service {
 
     public final static URL WSDL_LOCATION;
 
-    public final static QName SERVICE = new QName("http://server_01.webservice.soap.demo.com/", "DemoFunctionInterfaceImplService");
-    public final static QName DemoFunctionInterfaceImplPort = new QName("http://server_01.webservice.soap.demo.com/", "DemoFunctionInterfaceImplPort");
+    public final static QName SERVICE = new QName("http://server.webservice.soap.demo.com/", "DemoFunctionInterfaceImplService");
+    public final static QName DemoFunctionInterfaceImplPort = new QName("http://server.webservice.soap.demo.com/", "DemoFunctionInterfaceImplPort");
     static {
         URL url = null;
         try {

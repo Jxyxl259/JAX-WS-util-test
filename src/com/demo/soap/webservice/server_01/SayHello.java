@@ -1,5 +1,5 @@
 
-package com.demo.soap.webservice.server_01;
+package com.demo.soap.webservice.server;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sayHello", propOrder = {
     "arg0"
-})
+},namespace = "method")
 public class SayHello {
 
     protected String arg0;

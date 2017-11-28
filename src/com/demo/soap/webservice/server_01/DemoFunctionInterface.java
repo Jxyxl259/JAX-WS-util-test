@@ -1,4 +1,4 @@
-package com.demo.soap.webservice.server_01;
+package com.demo.soap.webservice.server;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -14,7 +14,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 3.2.1
  * 
  */
-@WebService(targetNamespace = "http://server_01.webservice.soap.demo.com/", name = "DemoFunctionInterface")
+@WebService(targetNamespace = "http://server.webservice.soap.demo.com/", name = "DemoFunctionInterface")
 @XmlSeeAlso({ObjectFactory.class})
 public interface DemoFunctionInterface {
 
